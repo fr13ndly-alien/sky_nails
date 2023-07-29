@@ -2,7 +2,7 @@
 FROM nginx:alpine
 
 # Copy your HTML files into the container's web root
-COPY constructing/* /usr/share/nginx/html
+COPY web/ /usr/share/nginx/html
 
 # Expose port 80 to make the web server accessible
 EXPOSE 80
