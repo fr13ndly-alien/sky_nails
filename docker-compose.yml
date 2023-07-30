@@ -1,7 +1,19 @@
 version: '1.0'
 
+# services:
+#   web:
+#     image: henrylee7777/sky_nails:latest
+#     ports:
+#       - "80:80"
+
 services:
-  web:
-    image: henrylee7777/sky_nails:latest
-    ports:
-      - "80:80"
+  sky-nails:
+    image: 'henrylee7777/sky_nails:latest'
+    hostname: sky-nails
+    container_name: sky-nails
+    networks:
+      - nginx-network
+
+networks:
+  nginx-network:
+    external: true
