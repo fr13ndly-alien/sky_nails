@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass web/scss/bootstrap.scss -o dist --output-style compressed"
+    "build-css": "node-sass web/scss/bootstrap.scss -o web/css --output-style compressed"
   },
   "repository": {
     "type": "git",
