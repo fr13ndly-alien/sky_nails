@@ -1,0 +1,25 @@
+{
+  "name": "sky-nails",
+  "version": "1.0.0",
+  "description": "- Cd to repo's folder\r - Run `docker build -t sky-nails .`\r - To run the image, run command: `docker run -d -p 80:80 sky-nails`\r # Push:\r Run these commands:\r ```\r docker login -u <username> -p <password>\r docker tag sky-nails:latest henrylee777/sky_nails:latest\r docker push henrylee777/sky_nails:latest\r ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass web/scss/bootstrap.scss -o dist --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fr13ndly-alien/sky_nails.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fr13ndly-alien/sky_nails/issues"
+  },
+  "homepage": "https://github.com/fr13ndly-alien/sky_nails#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "node-sass": "^9.0.0"
+  }
+}

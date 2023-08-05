@@ -1,12 +1,12 @@
 /******* Customized Bootstrap ********/
 
-$primary: #AB7442;
+$primary: #17a2b8;
 $light: #F5F5F5;
 $dark: #353535;
 
-$font-family-base: 'Roboto Condensed', sans-serif;
+$font-family-base: 'Barlow Condensed', sans-serif;
 
-$headings-font-family: 'Roboto', sans-serif;
+$headings-font-family: 'Barlow', sans-serif;
 
 $body-color: #555555;
 
@@ -24,4 +24,5 @@ $link-decoration: none;
 
 $enable-negative-margins: true;
 
-@import "bootstrap/scss/bootstrap";
+// @import "bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap/scss/bootstrap";
