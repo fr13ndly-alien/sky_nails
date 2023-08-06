@@ -1,3 +1,5 @@
 # .gitignore
+constructing/
+imgs/
 node_modules/
 package-lock.json
