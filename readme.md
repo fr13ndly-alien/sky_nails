@@ -9,3 +9,7 @@ docker login -u <username> -p <password>
 docker tag sky-nails:latest henrylee777/sky_nails:latest
 docker push henrylee777/sky_nails:latest
 ```
+
+# Deploy:
+- SSH into host
+- CD 
