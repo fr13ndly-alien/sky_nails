@@ -116,11 +116,7 @@
 
 
     <!-- Contact Start -->
-    <div class="container-fluid overflow-hidden px-lg-0 bg-white" style="margin: 6rem 0;">
-        <!-- <a href="https://skynails.youcanbook.me/"><img src="https://youcanbook.me/resources/pics/ycbm-button.png" style="border-style:none;"/></a> -->
-
-        <iframe src="http://calendar.google.com/calendar/appointments/schedules/AcZssZ3Z4JuEKI97Y_4iHQngHfshav5oXZw4ZxdN9omzxeJoT16VOKUA7oqNATOemeQ5zv7im22guQr-?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
-    </div>
+    <div class="container-fluid overflow-hidden px-lg-0 bg-white" id="calendar-container" style="margin: 6rem 0;"></div>
     <!-- Contact End -->
 
 
@@ -199,6 +195,13 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- Update timezone script -->
+    <script type="text/javascript">
+        const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone 
+        const html = `<iframe src="http://calendar.google.com/calendar/appointments/schedules/AcZssZ3Z4JuEKI97Y_4iHQngHfshav5oXZw4ZxdN9omzxeJoT16VOKUA7oqNATOemeQ5zv7im22guQr-?gv=true&ctz=${timezone}" style="border: 0" width="100%" height="600" frameborder="0"></iframe>`
+        document.getElementById('calendar-container').innerHTML = html;
+    </script>
 </body>
 
 </html>
